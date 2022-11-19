@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: rgb(213, 249, 249);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main {
+            padding: 25px;
+            margin: 5rem;
+            background-color: rgb(169, 221, 247);
+            height: 100%;
+            width: 700px;
+            text-align: center;
+
+        }
+
+        button {
+            padding: 10px;
+            margin: 20px;
+
+        }
+
+        #fill {
+            width: 4rem;
+        }
+
+        select {
+            width: 150px;
+        }
+
+        #table {
+            text-align: -webkit-center;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .name {
+            margin: 3rem;
+        }
+    </style>
+    
+
+</head>
+
+<body >
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular-route.min.js"></script> -->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="submit2.js"></script>
+    <div class="main" >
+        <div>
+            <label for="fname">Project Id</label>
+            <select id="projectId">
+            </select>
+        </div>
+        <div id="mainbutton" > <button id="trdraft">TR DRAFT</button>
+            <button>INSURANCE</button>
+        </div>
+        <div   >
+            <table id="table">
+                <thead>
+                <tr>
+                    <th>DOCID</th>
+                    <th>NAME</th>
+                    <th></th>
+                </tr></thead>
+                <tbody>
+                 <!-- ng-repeat="m in Customers" -->
+                    <!-- <tr></tr> -->
+                        <!-- <td><input type="text" id="docId" name="name" value="{{m.docId}}" />
+                        </td>
+                        <td><input type="text" id="name" name="name" value="{{m.firstName}}"/></td>
+                        <td><button id="fill" type="submit" ng-click="GetDetails($index)">FILL</button></td> -->
+                    
+                </tbody>
+            </table>
+            <button><a href="userprojects.html">MAIN SCREEN</a></button>
+        </div>
+    </div>
+    <div class="name">
+        <h3>UserName</h3>
+        <a href="loginpage.html">
+            <button type="submit">Logout</button>
+        </a>
+    </div>
+</body>
+<script type="text/javascript" src="fetch.js"></script>
+
+</html>
